@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>איכות למטבח ולבית במחירים ללא תחרות</title>
+    <style>
+        /* עיצוב כללי */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* חלק עליון - Hero Section */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        /* חלק התועלות */
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            background-color: white;
+        }
+
+        .benefit-card {
+            text-align: center;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .benefit-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* טופס הרשמה */
+        .form-section {
+            background-color: #ecf0f1;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 95%;
+            padding: 15px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #219150;
+        }
+
+        /* פוטר */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* התאמה לנייד */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            header p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>הבית והמטבח שלך משתדרגים היום!</h1>
+        <p>מוצרים איכותיים לבית במחירים שפשוט אי אפשר למצוא במקום אחר.</p>
+    </header>
+
+    <section class="benefits">
+        <div class="benefit-card">
+            <h3>איכות ללא פשרות</h3>
+            <p>כל המוצרים שלנו נבחרים בקפידה ועוברים בקרת איכות מחמירה כדי להבטיח עמידות לאורך שנים.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>המחיר הזול בישראל</h3>
+            <p>אנחנו עוקפים את המתווכים ומביאים לכם את המחיר ישירות מהיבואן לצרכן.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>שירות מנצח</h3>
+            <p>משלוחים מהירים עד הבית ומענה אנושי לכל שאלה או בקשה.</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="form-container">
+            <h2>רוצים לקבל את הקטלוג החדש?</h2>
+            <p>השאירו פרטים ושלחו אליכם את המבצעים הכי חמים למטבח ולבית:</p>
+            <form>
+                <input type="text" placeholder="שם מלא" required>
+                <input type="email" placeholder="אימייל" required>
+                <input type="tel" placeholder="מספר טלפון" required>
+                <button type="submit">אני רוצה להשתדרג!</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 כל הזכויות שמורות לשיווק מוצרי איכות לבית
+    </footer>
+
+</body>
+</html>
