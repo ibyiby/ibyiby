@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>איכות למטבח ולבית במחירים ללא תחרות</title>
+    <title>Kitchen Gadgets - איכות למטבח ולבית</title>
+    
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1830/1830839.png" type="image/png">
+
     <style>
         /* עיצוב כללי */
         body {
@@ -14,25 +17,38 @@
             color: #333;
         }
 
+        /* לוגו / שם העסק */
+        .brand-logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #27ae60;
+            padding: 15px 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
         /* חלק עליון - Hero Section */
         header {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
-            padding: 100px 20px;
+            padding: 80px 20px;
         }
 
         header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
+            font-size: 3.5rem;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         header p {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
         }
 
         /* חלק התועלות */
@@ -40,7 +56,7 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            padding: 50px 20px;
+            padding: 60px 20px;
             background-color: white;
         }
 
@@ -48,17 +64,24 @@
             text-align: center;
             max-width: 300px;
             margin: 20px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
         }
 
         .benefit-card h3 {
             color: #2c3e50;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
         }
 
         /* טופס הרשמה */
         .form-section {
             background-color: #ecf0f1;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
 
@@ -66,88 +89,106 @@
             max-width: 500px;
             margin: 0 auto;
             background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .form-container h2 {
+            margin-top: 0;
+            color: #2c3e50;
         }
 
         input {
             width: 90%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 15px;
+            margin: 12px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
             font-size: 1rem;
+            outline: none;
+        }
+        
+        input:focus {
+            border-color: #27ae60;
         }
 
         button {
-            width: 95%;
+            width: 96%;
             padding: 15px;
             background-color: #27ae60;
             color: white;
             border: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
+            border-radius: 8px;
+            font-size: 1.3rem;
+            font-weight: bold;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 10px;
         }
 
         button:hover {
             background-color: #219150;
+            transform: scale(1.02);
         }
 
         /* פוטר */
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             background-color: #2c3e50;
             color: white;
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
         /* התאמה לנייד */
         @media (max-width: 600px) {
-            header h1 { font-size: 2rem; }
-            header p { font-size: 1.1rem; }
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1.2rem; }
+            .brand-logo { font-size: 1.5rem; }
         }
     </style>
 </head>
 <body>
 
     <header>
+        <div class="brand-logo">Kitchen Gadgets</div>
         <h1>הבית והמטבח שלך משתדרגים היום!</h1>
-        <p>מוצרים איכותיים לבית במחירים שפשוט אי אפשר למצוא במקום אחר.</p>
+        <p>מביאים לכם את הגאדג'טים הכי חכמים למטבח במחירים שפשוט אי אפשר למצוא במקום אחר.</p>
     </header>
 
     <section class="benefits">
         <div class="benefit-card">
+            <div style="font-size: 3rem; margin-bottom: 10px;">⭐</div>
             <h3>איכות ללא פשרות</h3>
-            <p>כל המוצרים שלנו נבחרים בקפידה ועוברים בקרת איכות מחמירה כדי להבטיח עמידות לאורך שנים.</p>
+            <p>כל המוצרים שלנו נבחרים בקפידה ועוברים בקרת איכות מחמירה כדי להבטיח עמידות ונוחות עבודה.</p>
         </div>
         <div class="benefit-card">
+            <div style="font-size: 3rem; margin-bottom: 10px;">💰</div>
             <h3>המחיר הזול בישראל</h3>
-            <p>אנחנו עוקפים את המתווכים ומביאים לכם את המחיר ישירות מהיבואן לצרכן.</p>
+            <p>אנחנו ב-Kitchen Gadgets חוסכים את פערי התיווך ומביאים לכם את המחיר ישירות מהיבואן.</p>
         </div>
         <div class="benefit-card">
-            <h3>שירות מנצח</h3>
-            <p>משלוחים מהירים עד הבית ומענה אנושי לכל שאלה או בקשה.</p>
+            <div style="font-size: 3rem; margin-bottom: 10px;">🚚</div>
+            <h3>שירות ומשלוח מהיר</h3>
+            <p>משלוחים מהירים לכל חלקי הארץ ומענה אנושי לכל שאלה במרכז השירות שלנו.</p>
         </div>
     </section>
 
     <section class="form-section">
         <div class="form-container">
-            <h2>רוצים לקבל את הקטלוג החדש?</h2>
-            <p>השאירו פרטים ושלחו אליכם את המבצעים הכי חמים למטבח ולבית:</p>
+            <h2>רוצים לקבל את קטלוג הגאדג'טים?</h2>
+            <p>השאירו פרטים וקבלו את רשימת המבצעים הכי חמים למטבח המודרני:</p>
             <form>
-                <input type="text" placeholder="שם" required>
-                <input type="email" placeholder="אימייל" required>
+                <input type="text" placeholder="שם מלא" required>
+                <input type="email" placeholder="כתובת אימייל" required>
                 <button type="submit">אני רוצה להשתדרג!</button>
             </form>
         </div>
     </section>
 
     <footer>
-        &copy; 2024 כל הזכויות שמורות לשיווק מוצרי איכות לבית
+        &copy; 2024 Kitchen Gadgets - כל הזכויות שמורות לשיווק מוצרי איכות למטבח
     </footer>
 
 </body>
